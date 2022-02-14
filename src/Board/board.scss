@@ -1,0 +1,44 @@
+    .board-container {
+        padding: 20px;
+        display: flex;
+
+        .scrollable {
+            max-height: 93vh;
+            overflow: hidden;
+            overflow-y: auto;
+            flex-grow: 1
+        }
+    }
+    
+    .filters {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        select {
+            padding: 5px;
+            border-radius: 6px;
+        }
+        
+        .clear {
+            background: #2980b9;
+            border: none;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 6px;
+            border: 1px solid #f6f6f6;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+                background: #1c71a9;
+            }
+        }
+        
+        .filter {
+            padding: 5px;
+            label {
+                margin-right:  5px;;
+            }
+        }
+    }
